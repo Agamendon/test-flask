@@ -1,0 +1,147 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Hahaton</title>
+	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<style>
+		body{
+			background-color:#201c2b;
+		}
+		#main{
+			background-color:#6441A4;
+			width:50%;
+			height:300px;
+			position:absolute;
+			left:25%;
+			top:500px;
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22), 0 -5px 10px rgba(0,0,0,0.25);
+		}
+		#lightness{
+			background-color:#6441A4;
+			width:100px;
+			height:30px;
+			border-radius:5px;
+			color:#e5e3e8;
+			position:absolute;
+			left:94.81%;
+			bottom:0px;
+			font-weight:700;
+			border-color:#6441A4;
+		}
+		button:focus {
+			outline: none !important
+		}
+		#mute_unmute{
+			background-color:#201c2b;
+			border-color:#201c2b;
+			border-radius:5px;
+			color:#e5e3e8;
+		}
+		#mute_unmute{
+			background-color:#201c2b;
+			border-color:#201c2b;
+			border-radius:8px;
+			color:#e5e3e8;
+			width:20%;
+			height:100px;
+			margin-left:20%;
+			margin-top:100px;
+			font-size:30px;
+		}
+		#deafen_undeafen{
+			background-color:#201c2b;
+			border-color:#201c2b;
+			border-radius:8px;
+			color:#e5e3e8;
+			width:20%;
+			height:100px;
+			margin-left:20%;
+			font-size:30px;
+		}
+	</style>
+</head>
+<body>
+<div id="main">
+	<button id="mute_unmute">Mute</button>
+	<button id="deafen_undeafen">Deafen</button>
+</div>
+<button id="lightness">Light</button>
+<script>
+	let check = true
+
+	$("#lightness").click(function(event){
+		if (check == true){
+			$("body").css({
+				'background-color':'#ffff'			
+			})
+			$("#main").css({
+				'background-color':'#6441A4'
+			})
+			$("#lightness").css({
+				'background-color':'#6441A4',
+				'color':'#232127'
+			})
+			$("#lightness").text("Dark")
+			$("#mute_unmute").css({
+				'background-color':'#ffff',
+				'border-color':'#ffff',
+				'color':'#232127'
+			})
+			$("#deafen_undeafen").css({
+				'background-color':'#ffff',
+				'border-color':'#ffff',
+				'color':'#232127'
+			})
+			check = false
+		}else{
+			$("body").css({
+				'background-color':'#201c2b'			
+			})
+			$("#main").css({
+				'background-color':'#6441A4'
+			})
+			$("#lightness").css({
+				'background-color':'#6441A4',
+				'color':'#e5e3e8'
+			})
+			$("#lightness").text("Light")
+			$("#mute_unmute").css({
+				'background-color':'#201c2b',
+				'border-color':'#201c2b',
+				'color':'e5e3e8'
+			})
+			$("#deafen_undeafen").css({
+				'background-color':'#201c2b',
+				'border-color':'#201c2b',
+				'color':'e5e3e8'
+			})
+			check = true
+		}
+	})
+
+	let check2 = true
+
+	$("#mute_unmute").click(function(event){
+		if (check2 == true){
+			$("#mute_unmute").text("Unmute")
+			check2 = false
+		}else{
+			$("#mute_unmute").text("Mute")
+			check2 = true
+		}
+	})
+
+	let check3 = true
+
+	$("#deafen_undeafen").click(function(event){
+		if (check3 == true){
+			$("#deafen_undeafen").text("Undeafen")
+			check3 = false
+		}else{
+			$("#deafen_undeafen").text("Deafen")
+			check3 = true
+		}
+	})
+</script>
+</body>
+</html>
