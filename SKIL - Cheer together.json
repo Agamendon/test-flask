@@ -1,0 +1,64 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "",
+  "backendFolderName": "",
+  "certificateExceptions": [],
+  "extensionViews": [],
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "SKIL team",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost:8080/panel.html",
+    "configurationLocation": "none",
+    "description": "This extension allows viewers to speak and cheer with streamer and each other together, creating effect of live presence of a crowd of fans.",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "",
+    "iconUrls": {},
+    "id": "mx8tqlroejiitec6xiuok8qhko4rcl",
+    "installationCount": -42,
+    "liveConfigUrl": "https://localhost:8080/live_config.html",
+    "name": "SKIL - Cheer together",
+    "panelHeight": 500,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "This extension allows viewers to speak and cheer with streamer and each other together, creating effect of live presence of a crowd of fans.",
+    "supportEmail": "parihackaton2020@gmail.com",
+    "vendorCode": "",
+    "version": "0.0.2",
+    "viewerSummary": "",
+    "viewerUrl": "https://localhost:8080/panel.html",
+    "viewerUrls": {
+      "panel": "https://localhost:8080/panel.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "https://localhost:8080/panel.html",
+        "height": 500,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "https://localhost:8080/panel.html",
+        "canLinkExternalContent": false
+      },
+      "liveConfig": {
+        "viewerUrl": "https://localhost:8080/live_config.html",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "frontendCommand": "",
+  "frontendFolderName": "C:\\Users\\gosha\\Documents\\HTML_test",
+  "name": "SKIL - Cheer together",
+  "usingRandomFrontendHostingPort": false,
+  "version": 3
+}
